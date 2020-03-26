@@ -1,21 +1,21 @@
 import React from 'react';
 import './App.css';
 import Footer from './components/UI/Footer/Footer';
-import Header from './components/UI/Header'
-import Main from './components/Main/Main'
+import Header from './components/UI/Header/Header'
+import Main from './Main'
 
 function App() {
-   return (
+  return (
 
     <>
-    <Header />
-<Main />
-    <Footer />
-    
-     </>
-     
-   ) 
-  
+      <Header />
+      <Main />
+      <Footer />
+
+    </>
+
+  )
+
 }
 
 export default App;
