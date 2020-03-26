@@ -1,6 +1,7 @@
 import React from 'react'
 import ShowCard from '../../components/ShowCard/ShowCard'
 import classes from './LandingPage.module.css'
+import http from '../../services/HttpServices'
 
 class LandingPage extends React.Component {
     constructor(props) {
@@ -8,6 +9,11 @@ class LandingPage extends React.Component {
         this.state = {
             shows: []
         }
+    }
+
+
+    componentDidMount () {
+
     }
 
 
