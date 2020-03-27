@@ -1,30 +1,21 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-const ShowCard = (props) => {
-    return (
-      
+const ShowCard = (props) => (
 
-                    <div class="col s12 l4 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/sample-1.jpg"/>
-              <span class="card-title">Card Title</span>
+  <Link to = {`/show/${props.showInfo.id}`} >
+    <div className="col s12 m4">
+        <div className="card hoverable">
+            <div className="card-image">
+                <img src={props.showInfo.image.medium} alt="" />
+                <span className="btn-floating btn-large halfway-fab blue ">{props.showInfo.ratings}</span>
             </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+            <div className="card-content">
+                <span className="card-title grey-text text-darken-4 truncate">{props.showInfo.name}</span>
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
         </div>
+    </div>
+</Link>
+)
 
-
-       
-      
-
-    )
-}
-
-export default ShowCard;
+export default ShowCard
