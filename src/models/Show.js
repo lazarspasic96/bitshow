@@ -9,8 +9,4 @@ export default class Show {
         this.description = summary
      
     }
-
-    htmlDescription = () => {
-        return {__html: '<p>eeee</p>'}
-    }
 }

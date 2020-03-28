@@ -12,7 +12,7 @@ const Header = () => (
                     </Link>
                     <ul className="right">
                         <li>
-                            <Link to="/about">About</Link>
+                            <Link to="/about"><span>About</span></Link>
                         </li>
                     </ul>
                 </div>

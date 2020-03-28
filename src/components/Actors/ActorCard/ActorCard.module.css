@@ -1,0 +1,10 @@
+.ActorCard {
+    width: 80%;
+}
+
+.ActorName {
+    display: block;
+    bottom: -30px !important;
+    width: 100%;
+    font-style: inherit;
+}
