@@ -4,9 +4,13 @@ export default class Show {
         this.id = id
         this.name = name
         this.genres = genres
-        this.image = image
-        this.ratings = rating.average 
+        this.image = image.medium
+        this.rating = rating.average 
         this.description = summary
      
+    }
+
+    htmlDescription = () => {
+        return {__html: '<p>eeee</p>'}
     }
 }

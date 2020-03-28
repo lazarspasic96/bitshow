@@ -1,5 +1,5 @@
 import React from 'react'
-import ShowCard from '../../components/ShowCard/ShowCard'
+import ShowCard from '../../components/ShowCards/ShowCard'
 import classes from './LandingPage.module.css'
 import http from '../../services/HttpServices'
 import Show from '../../models/Show'
@@ -17,7 +17,7 @@ class LandingPage extends React.Component {
     componentDidMount() {
         http.get().then(res => {
             console.log(res.data)
-            res.data.sort((a,b)=> b.rating.average - a.rating.average).length =50
+            res.data.sort((a,b)=> b.rating.average - a.rating.average).length = 51
             this.setState({shows: res.data.map(show => new Show (show))})
         })
     }
@@ -36,7 +36,7 @@ class LandingPage extends React.Component {
         return <div className={[classes.LandingPage, 'container'].join(' ')}>
             <div className='row'>
 
-                {this.state.shows.map(show => <ShowCard showInfo ={show} />)}
+                {this.state.shows.map(show => <ShowCard allShowsInfo = {this.state.shows} key={show.id} showInfo ={show} />)}
 
             </div>
         </div>
