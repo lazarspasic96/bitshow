@@ -9,4 +9,8 @@ export default class Show {
         this.description = summary
      
     }
+
+    getName = () => {
+        return this.name.toLowerCase()
+    }
 }
