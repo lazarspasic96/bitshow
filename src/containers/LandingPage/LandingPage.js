@@ -4,6 +4,8 @@ import classes from './LandingPage.module.css'
 import http from '../../services/HttpServices'
 import Show from '../../models/Show'
 import SearchBox from '../../components/SearchBox/SearchBox'
+import Spinner from '../../components/UI/Spinner/Spinner'
+import Error from '../../components/UI/Error/Error'
 
 
 
@@ -12,7 +14,8 @@ class LandingPage extends React.Component {
         super(props)
         this.state = {
             shows: [],
-            search: ''
+            search: '',
+            error: false
         }
     }
 
@@ -22,50 +25,47 @@ class LandingPage extends React.Component {
     }
 
     componentDidMount() {
-        http.get().then(res => {
+        
+            http.get().then(res => {
             console.log(res.data)
             res.data.sort((a, b) => b.rating.average - a.rating.average).length = 51
             this.setState({ shows: res.data.map(show => new Show(show)) })
         })
+        .catch(err => this.setState({error: true}))
     }
 
 
 
 
     render() {
-
-
-
-
-
-        if (this.state.shows === false) {
-            return <p>Loading....</p>
+        const {shows, error, search} = this.state
+        if (this.state.shows === []) {
+            return <Spinner />
         }
 
-        let displayShow = this.state.shows
+        let displayShow = shows
         let filterShow = displayShow.filter(show => {
-            if (show.getName().includes(this.state.search)) {
+            if (show.getName().includes(search)) {
                 return true
             }
         });
 
-        if (this.state.search) {
+        if (search) {
             displayShow = filterShow
         }
+        if (error) {
+            return <Error />
+        }
 
-        return <div className={[classes.LandingPage, 'container'].join(' ')}>
-
+        return (
+            <div className={[classes.LandingPage, 'container'].join(' ')}>
             <SearchBox onChange={this.searchHnadler} />
-
-
             <div className='row'>
-
-
-
-                {displayShow.map(show => <ShowCard key={show.id} showInfo={show} />)}
-
+            {displayShow.map(show => <ShowCard key={show.id} showInfo={show} />)}
             </div>
         </div>
+        )
+       
     }
 }
 

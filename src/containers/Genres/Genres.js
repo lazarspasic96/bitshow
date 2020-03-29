@@ -44,7 +44,7 @@ class Genres extends React.Component {
         return <div className={classes.Genres}>
             <div className='row'>
                 <h2 className={classes.Heading}>{genre}</h2>
-                {this.state.shows.map(show => <ShowCard showInfo={show} />)}
+                {this.state.shows.map(show => <ShowCard key={show.id} showInfo={show} />)}
             </div>
         </div>
 
