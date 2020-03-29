@@ -16,11 +16,13 @@ const SingleShowCard = (props) => {
         return { __html: description }
     }
 
-    function filterGenres() {
-
+    function filterGenres(genre) {
+        console.log(genre)
+   
         props.history.push({
             pathname: '/genres',
-            state: { detail: props.location.state.allShowsInfo }
+            search: `?genre=${encodeURIComponent(genre)}`,
+          
 
         })
     }
@@ -39,7 +41,7 @@ const SingleShowCard = (props) => {
 
                 <div className={[classes.Description, 'col s12 m6 l6'].join(' ')} >
                     <h4>{props.show.name}</h4>
-                    {genres ? genres.map(genre => <Button click={filterGenres} key = {genre}>{genre}</Button>) : null}
+                    {genres ? genres.map(genre => <Button click={() => filterGenres(genre)} key={genre}>{genre}</Button>) : null}
                     <p style={{ textAlign: 'justify' }} dangerouslySetInnerHTML={innerHtml()} />
                 </div>
             </div>

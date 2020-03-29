@@ -3,12 +3,7 @@ import {Link} from 'react-router-dom'
 
 const ShowCard = (props) => (
 
-  <Link to = {{
-      pathname: `/show/${props.showInfo.id}`,
-      state: {allShowsInfo: props.allShowsInfo}
-  }}
-     
-   >
+  <Link to = {`/show/${props.showInfo.id}`}>
     <div className="col s12 m4">
         <div className="card hoverable">
             <div className="card-image">

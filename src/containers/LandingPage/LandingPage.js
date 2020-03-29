@@ -29,14 +29,14 @@ class LandingPage extends React.Component {
      
     
   
-        if (this.state.shows === []) {
+        if (this.state.shows === false) {
             return <p>Loading....</p>
         } 
   
         return <div className={[classes.LandingPage, 'container'].join(' ')}>
             <div className='row'>
 
-                {this.state.shows.map(show => <ShowCard allShowsInfo = {this.state.shows} key={show.id} showInfo ={show} />)}
+                {this.state.shows.map(show => <ShowCard  key={show.id} showInfo ={show} />)}
 
             </div>
         </div>
