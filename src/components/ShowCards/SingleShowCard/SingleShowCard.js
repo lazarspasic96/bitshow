@@ -17,7 +17,7 @@ const SingleShowCard = (props) => {
     }
 
     function filterGenres(genre) {
-        console.log(genre)
+
    
         props.history.push({
             pathname: '/genres',

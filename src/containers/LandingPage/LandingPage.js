@@ -28,7 +28,7 @@ class LandingPage extends React.Component {
     componentDidMount() {
         
             http.get().then(res => {
-            console.log(res.data)
+  
             res.data.sort((a, b) => b.rating.average - a.rating.average).length = 51
             this.setState({ shows: res.data.map(show => new Show(show)) })
         })

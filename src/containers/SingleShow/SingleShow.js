@@ -39,7 +39,7 @@ class SingleShow extends React.Component {
         if (this.state.show === false) {
             return <p>fff</p>
         }
-        console.log(this.state.show)
+
         return <div className={classes.SingleShow}>
             <SingleShowCard key={this.state.show.id} show={this.state.show} />
             <div className='row'>
