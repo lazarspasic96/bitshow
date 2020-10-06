@@ -9,6 +9,7 @@ import Error from '../../components/UI/Error/Error'
 
 
 
+
 class LandingPage extends React.Component {
     constructor(props) {
         super(props)
@@ -32,6 +33,8 @@ class LandingPage extends React.Component {
             this.setState({ shows: res.data.map(show => new Show(show)) })
         })
         .catch(err => this.setState({error: true}))
+
+       
     }
 
 
@@ -59,6 +62,7 @@ class LandingPage extends React.Component {
 
         return (
             <div className={[classes.LandingPage, 'container'].join(' ')}>
+          
             <SearchBox onChange={this.searchHnadler} />
             <div className='row'>
             {displayShow.map(show => <ShowCard key={show.id} showInfo={show} />)}

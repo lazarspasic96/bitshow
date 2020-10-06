@@ -24,9 +24,8 @@ class SingleShow extends React.Component {
         http.get(`http://api.tvmaze.com/shows/${id}?embed[]=cast&embed[]=seasons`)
             .then(show => {
                 const actors = show.data._embedded.cast
-                console.log(actors)
+               actors.length = 6
                 const seasons = show.data._embedded.seasons
-                console.log(seasons)
                 this.setState({ show: new Show(show.data), actors: actors.map(actor => new Actor(actor)) }
                 )
             }

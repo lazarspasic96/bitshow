@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import LandingPage from './containers/LandingPage/LandingPage'
 import SingleShow from './containers/SingleShow/SingleShow'
 import Genres from './containers/Genres/Genres'
+import About from './components/AboutPage/About'
 
 
 const Main = () => {
@@ -10,7 +11,8 @@ const Main = () => {
         <Switch >
             <Route exact path='/' component={LandingPage} />
             <Route path='/show/:id' component={SingleShow} />
-            <Route pathh='/genres' component = {Genres} />
+            <Route path='/genres' component = {Genres} />
+            <Route path='/about' component = {About} />
         </Switch>
 
     </main>
