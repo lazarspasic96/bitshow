@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Laks96/bitshow/static/css/main.b568c79c.chunk.css",
-    "main.js": "/Laks96/bitshow/static/js/main.131ce7ce.chunk.js",
-    "main.js.map": "/Laks96/bitshow/static/js/main.131ce7ce.chunk.js.map",
+    "main.js": "/Laks96/bitshow/static/js/main.bc643000.chunk.js",
+    "main.js.map": "/Laks96/bitshow/static/js/main.bc643000.chunk.js.map",
     "runtime-main.js": "/Laks96/bitshow/static/js/runtime-main.84021268.js",
     "runtime-main.js.map": "/Laks96/bitshow/static/js/runtime-main.84021268.js.map",
     "static/js/2.bc5975bf.chunk.js": "/Laks96/bitshow/static/js/2.bc5975bf.chunk.js",
     "static/js/2.bc5975bf.chunk.js.map": "/Laks96/bitshow/static/js/2.bc5975bf.chunk.js.map",
     "index.html": "/Laks96/bitshow/index.html",
-    "precache-manifest.3486a23781d5d7d0fa05b496a62317f7.js": "/Laks96/bitshow/precache-manifest.3486a23781d5d7d0fa05b496a62317f7.js",
+    "precache-manifest.594ea11bae92e7a1e106bd040ff97f3a.js": "/Laks96/bitshow/precache-manifest.594ea11bae92e7a1e106bd040ff97f3a.js",
     "service-worker.js": "/Laks96/bitshow/service-worker.js",
     "static/css/main.b568c79c.chunk.css.map": "/Laks96/bitshow/static/css/main.b568c79c.chunk.css.map",
     "static/js/2.bc5975bf.chunk.js.LICENSE.txt": "/Laks96/bitshow/static/js/2.bc5975bf.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.84021268.js",
     "static/js/2.bc5975bf.chunk.js",
     "static/css/main.b568c79c.chunk.css",
-    "static/js/main.131ce7ce.chunk.js"
+    "static/js/main.bc643000.chunk.js"
   ]
 }
