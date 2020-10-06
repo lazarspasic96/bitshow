@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Laks96/bitshow/static/css/main.34f213eb.chunk.css",
+    "main.js": "/Laks96/bitshow/static/js/main.54ad8c6d.chunk.js",
+    "main.js.map": "/Laks96/bitshow/static/js/main.54ad8c6d.chunk.js.map",
+    "runtime-main.js": "/Laks96/bitshow/static/js/runtime-main.84021268.js",
+    "runtime-main.js.map": "/Laks96/bitshow/static/js/runtime-main.84021268.js.map",
+    "static/js/2.f43635e6.chunk.js": "/Laks96/bitshow/static/js/2.f43635e6.chunk.js",
+    "static/js/2.f43635e6.chunk.js.map": "/Laks96/bitshow/static/js/2.f43635e6.chunk.js.map",
+    "index.html": "/Laks96/bitshow/index.html",
+    "precache-manifest.cab30799a9e0300d0d26e03c40cfd9d6.js": "/Laks96/bitshow/precache-manifest.cab30799a9e0300d0d26e03c40cfd9d6.js",
+    "service-worker.js": "/Laks96/bitshow/service-worker.js",
+    "static/css/main.34f213eb.chunk.css.map": "/Laks96/bitshow/static/css/main.34f213eb.chunk.css.map",
+    "static/js/2.f43635e6.chunk.js.LICENSE.txt": "/Laks96/bitshow/static/js/2.f43635e6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84021268.js",
+    "static/js/2.f43635e6.chunk.js",
+    "static/css/main.34f213eb.chunk.css",
+    "static/js/main.54ad8c6d.chunk.js"
+  ]
+}
