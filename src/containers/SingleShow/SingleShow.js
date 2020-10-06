@@ -21,7 +21,7 @@ class SingleShow extends React.Component {
 
     componentDidMount() {
         let id = this.props.match.params.id
-        http.get(`http://api.tvmaze.com/shows/${id}?embed[]=cast&embed[]=seasons`)
+        http.get(`https://api.tvmaze.com/shows/${id}?embed[]=cast&embed[]=seasons`)
             .then(show => {
                 const actors = show.data._embedded.cast
                actors.length = 6
